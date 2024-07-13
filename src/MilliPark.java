@@ -1,22 +1,36 @@
 public class MilliPark {
-    String MilliPark_Adi, Il_Adlari; int Ilan_Yili,Yuzolcumu;
-    public int getYuzolcumu() {
-        return Yuzolcumu;
+    String milliParkAdi;
+    String ilAdi;
+    int ilanYili;
+    int yuzOlcumu;
+
+    public MilliPark(String milliParkAdi, String ilAdi, int ilanYili, int yuzOlcumu) {
+        this.milliParkAdi = milliParkAdi;
+        this.ilAdi = ilAdi;
+        this.ilanYili = ilanYili;
+        this.yuzOlcumu = yuzOlcumu;
     }
 
-    public MilliPark(String milliPark_Adi, String il_Adlari, int ilan_Yili, int yuzolcumu) {
-        MilliPark_Adi = milliPark_Adi;
-        Il_Adlari = il_Adlari;
-        Ilan_Yili = ilan_Yili;
-        Yuzolcumu = yuzolcumu;
+    public String getMilliParkAdi() {
+        return milliParkAdi;
     }
+
+    public String getIlAdi() {
+        return ilAdi;
+    }
+
+    public int getIlanYili() {return ilanYili;}
+
+
+    public int getYuzOlcumu() {return yuzOlcumu;}
+
+
     @Override
     public String toString() {
-        return "MilliPark{" +
-                "MilliPark_Adi='" + MilliPark_Adi + '\'' +
-                ", Il_Adlari='" + Il_Adlari + '\'' +
-                ", Ilan_Yili=" + Ilan_Yili +
-                ", Yuzolcumu=" + Yuzolcumu +
-                '}';
+        return
+                "Adı:" + getMilliParkAdi() +
+                " Bulunduğu İl: " + getIlAdi() +
+                " İlan Yılı:" + getIlanYili() +
+                " Yüz Ölçümü:" + getYuzOlcumu() ;
     }
 }
